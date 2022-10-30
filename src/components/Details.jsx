@@ -12,8 +12,7 @@ export const Details = ({id}) => {
       )
       .then(data => {
         setDetailsData(data)
-        console.log(data)
-        setLink(data.avatar)
+        if (data.avatar) setLink(data.avatar)
       })
   }, [id])
 
